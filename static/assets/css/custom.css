@@ -1,0 +1,75 @@
+/* assets/css/custom.css */
+
+body {
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif; /* 優先使用 Noto Sans TC */
+}
+
+.hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.lang-switcher button {
+    margin-left: 5px;
+}
+
+.chat-window .card-body {
+    background-color: #f8f9fa;
+}
+
+.chat-message {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    max-width: 80%;
+}
+
+.chat-message.user {
+    background-color: #0d6efd;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+    border-bottom-right-radius: 0;
+}
+
+.chat-message.ai {
+    background-color: #e9ecef;
+    color: #333;
+    margin-right: auto;
+    text-align: left;
+     border-bottom-left-radius: 0;
+}
+
+.chat-message strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.chat-message.user strong {
+    color: #cce5ff;
+}
+
+#ai-loading {
+    margin-left: 5px;
+}
+
+#ratios-table-body th,
+#ratios-table-body td {
+    vertical-align: middle;
+}
+
+#ratios-table-body .ratio-meaning-cell {
+    font-size: 0.9em;
+    color: #555;
+}
